@@ -60,9 +60,13 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.kontakt-button {
+kontakt-button {
   margin-top: 40px; /* Abstand nach oben */
   text-align: center;
   padding-top: 20px;
 }
 
+content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
