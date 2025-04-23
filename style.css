@@ -59,3 +59,10 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+.kontakt-button {
+  margin-top: 40px; /* Abstand nach oben */
+  text-align: center;
+  padding-top: 20px;
+}
+
