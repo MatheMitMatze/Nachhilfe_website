@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Über mich – Matthias Bärlin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>👨‍🏫 Über mich</h1>
+  </header>
+
+  <main class="content">
+    <p>Hallo! Ich bin Matthias Bärlin, Mathematiker mit einem M.Sc. in Mathematics. Seit mehreren Jahren helfe ich Schüler*innen und Studierenden dabei, Mathe besser zu verstehen...</p>
+    <!-- Du kannst hier Bilder, Stationen, Zitate usw. einfügen -->
+  </main>
+
+  <footer>
+    <p><a href="index.html">Zurück zur Startseite</a></p>
+  </footer>
+
+</body>
+</html>
