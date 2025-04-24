@@ -146,3 +146,28 @@ footer a:hover {
 .blickpunkt {
   margin-top: 40px;
 }
+.metro-station {
+  width: 70px;
+  height: 70px;
+  background-color: #2d6a4f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.3s;
+  padding: 5px;
+}
+
+.metro-station span {
+  display: block;
+  line-height: 1.1;
+}
+
+.metro-station:hover {
+  transform: scale(1.1);
+  background-color: #1b4332;
+}
