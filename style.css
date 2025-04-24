@@ -123,16 +123,28 @@ footer a:hover {
 }
 
 .metro-station {
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
   background-color: #2d6a4f;
   border-radius: 50%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
   transition: transform 0.2s, background-color 0.3s;
+  padding: 5px;
+}
+
+.metro-station span {
+  display: block;
+  line-height: 1.1;
 }
 
 .metro-station:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: #1b4332;
 }
 
@@ -140,6 +152,50 @@ footer a:hover {
   height: 6px;
   width: 60px;
   background-color: #2d6a4f;
+}
+
+/* Station-Popup (für Uni Konstanz) */
+.station-popup {
+  display: none;
+  position: absolute;
+  top: 80px;
+  background-color: white;
+  color: #2d6a4f;
+  border: 1px solid #2d6a4f;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 10;
+  text-align: center;
+}
+
+.metro-station:hover .station-popup {
+  display: block;
+}
+
+.station-popup a {
+  display: block;
+  text-decoration: none;
+  color: #2d6a4f;
+  margin: 5px 0;
+}
+
+.station-popup a:hover {
+  text-decoration: underline;
+}
+
+/* Medienabfragen für responsive Design */
+@media (max-width: 768px) {
+  .metro-timeline {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .metro-line {
+    width: 6px;
+    height: 60px;
+  }
 }
 
 /* Blickpunkt-Abschnitt */
