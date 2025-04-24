@@ -171,6 +171,7 @@ footer a:hover {
   transform: scale(1.1);
   background-color: #1b4332;
 }
+
 @media (max-width: 768px) {
   .options {
     flex-direction: column;
@@ -202,6 +203,7 @@ footer a:hover {
     height: 120px;
   }
 }
+
 .metro-station-wrapper {
   position: relative;
   display: flex;
