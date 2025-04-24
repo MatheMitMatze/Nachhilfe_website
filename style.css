@@ -171,3 +171,34 @@ footer a:hover {
   transform: scale(1.1);
   background-color: #1b4332;
 }
+@media (max-width: 768px) {
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .metro-timeline {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .metro-line {
+    width: 6px;
+    height: 60px;
+  }
+
+  .content {
+    padding: 20px 10px;
+  }
+
+  .profilbild {
+    width: 120px;
+    height: 120px;
+  }
+}
