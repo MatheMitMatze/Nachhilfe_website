@@ -1,128 +1,49 @@
-/* Grundlayout */
-body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f3f5f7;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Über mich – Matthias Bärlin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Header */
-header {
-  text-align: center;
-}
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
+  <header>
+    <h1>👨‍🏫 Über mich</h1>
+  </header>
 
-/* Farb-Highlight */
-.highlight {
-  color: #2d6a4f;
-}
+  <main class="content">
 
-/* Kachel-Layout */
-.options {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
+    <!-- Abschnitt: Bild & Zitat -->
+    <section class="intro">
+      <img src="bilder/matthias.jpg" alt="Matthias Bärlin" class="profilbild">
+      <blockquote class="zitat">
+        „Mathematik ist die Musik der Vernunft.“ – James Joseph Sylvester
+      </blockquote>
+    </section>
 
-.option {
-  background-color: white;
-  border: 2px solid #2d6a4f;
-  color: #2d6a4f;
-  padding: 20px 40px;
-  border-radius: 10px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
+    <!-- Abschnitt: Ausbildungsgraph -->
+    <section class="ausbildung">
+      <h2>Ausbildung</h2>
+      <div class="metro-timeline">
+        <a href="dokumente/schule.pdf" class="metro-station" title="Schule"></a>
+        <div class="metro-line"></div>
+        <a href="dokumente/bachelor.pdf" class="metro-station" title="Bachelor"></a>
+        <div class="metro-line"></div>
+        <a href="dokumente/master.pdf" class="metro-station" title="Master"></a>
+      </div>
+    </section>
 
-.option:hover {
-  background-color: #2d6a4f;
-  color: white;
-  transform: scale(1.05);
-}
+    <!-- Abschnitt: Blickpunkt Mathematik -->
+    <section class="blickpunkt">
+      <h2>Mein Blick auf Mathematik</h2>
+      <p>Mathematik bedeutet für mich Klarheit, Struktur und die Freiheit, kreativ zu denken. Sie ist nicht nur Werkzeug, sondern auch Sprache. Sie hilft mir, die Welt zu verstehen und komplexe Zusammenhänge sichtbar zu machen. Ich möchte diese Begeisterung weitergeben – praxisnah und menschlich.</p>
+    </section>
 
-/* Footer */
-footer {
-  background-color: #2d6a4f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+  </main>
 
-footer a {
-  color: white;
-  text-decoration: none;
-}
+  <footer>
+    <p><a href="index.html">Zurück zur Startseite</a></p>
+  </footer>
 
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Kontakt-Button */
-.kontakt-button {
-  margin-top: 40px;
-  padding-top: 20px;
-  text-align: center;
-}
-
-/* Hauptbereich für Text */
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  text-align: left;
-}
-
-/* Listen */
-.content ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-left: 0;
-}
-.intro {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 20px;
-}
-
-.profilbild {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-.zitat {
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #2d6a4f;
-}
-
-.timeline {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px;
-}
-
-.station {
-  display: inline-block;
-  font-size: 2.5rem;
-  text-decoration: none;
-  transition: transform 0.2s;
-}
-
-.station:hover {
-  transform: scale(1.2);
-}
+</body>
+</html>
