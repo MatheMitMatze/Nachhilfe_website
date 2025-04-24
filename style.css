@@ -202,3 +202,38 @@ footer a:hover {
     height: 120px;
   }
 }
+.metro-station-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.station-popup {
+  display: none;
+  position: absolute;
+  top: 80px;
+  background-color: white;
+  color: #2d6a4f;
+  border: 1px solid #2d6a4f;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 10;
+  text-align: center;
+}
+
+.metro-station-wrapper:hover .station-popup {
+  display: block;
+}
+
+.station-popup a {
+  display: block;
+  text-decoration: none;
+  color: #2d6a4f;
+  margin: 5px 0;
+}
+
+.station-popup a:hover {
+  text-decoration: underline;
+}
