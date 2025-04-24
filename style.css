@@ -14,39 +14,11 @@ header {
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 /* Farb-Highlight */
 .highlight {
   color: #2d6a4f;
-}
-
-/* Kachel-Layout */
-.options {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.option {
-  background-color: white;
-  border: 2px solid #2d6a4f;
-  color: #2d6a4f;
-  padding: 20px 40px;
-  border-radius: 10px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.option:hover {
-  background-color: #2d6a4f;
-  color: white;
-  transform: scale(1.05);
 }
 
 /* Footer */
@@ -69,26 +41,12 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Kontakt-Button */
-.kontakt-button {
-  margin-top: 40px;
-  padding-top: 20px;
-  text-align: center;
-}
-
 /* Hauptbereich für Text */
 .content {
   max-width: 800px;
   margin: 0 auto;
   padding: 30px 20px;
   text-align: left;
-}
-
-/* Listen */
-.content ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-left: 0;
 }
 
 /* Über mich: Bild und Zitat */
@@ -120,8 +78,10 @@ footer a:hover {
   justify-content: center;
   gap: 10px;
   margin: 40px 0;
+  position: relative;
 }
 
+/* Metro-Station */
 .metro-station {
   width: 70px;
   height: 70px;
@@ -148,13 +108,18 @@ footer a:hover {
   background-color: #1b4332;
 }
 
+/* Linie zwischen den Stationen */
 .metro-line {
+  position: absolute;
+  top: 50%;
+  left: 100%;
   height: 6px;
   width: 60px;
   background-color: #2d6a4f;
+  transform: translateY(-50%);
 }
 
-/* Station-Popup (für Uni Konstanz) */
+/* Popup für Uni Konstanz */
 .station-popup {
   display: none;
   position: absolute;
@@ -184,61 +149,8 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Medienabfragen für responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .metro-timeline {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .metro-line {
-    width: 6px;
-    height: 60px;
-  }
-}
-
-/* Blickpunkt-Abschnitt */
-.blickpunkt {
-  margin-top: 40px;
-}
-.metro-station {
-  width: 70px;
-  height: 70px;
-  background-color: #2d6a4f;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 0.8rem;
-  text-align: center;
-  text-decoration: none;
-  transition: transform 0.2s, background-color 0.3s;
-  padding: 5px;
-}
-
-.metro-station span {
-  display: block;
-  line-height: 1.1;
-}
-
-.metro-station:hover {
-  transform: scale(1.1);
-  background-color: #1b4332;
-}
-
-@media (max-width: 768px) {
-  .options {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .intro {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .metro-timeline {
     flex-direction: column;
     align-items: center;
@@ -258,40 +170,4 @@ footer a:hover {
     width: 120px;
     height: 120px;
   }
-}
-
-.metro-station-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.station-popup {
-  display: none;
-  position: absolute;
-  top: 80px;
-  background-color: white;
-  color: #2d6a4f;
-  border: 1px solid #2d6a4f;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  z-index: 10;
-  text-align: center;
-}
-
-.metro-station-wrapper:hover .station-popup {
-  display: block;
-}
-
-.station-popup a {
-  display: block;
-  text-decoration: none;
-  color: #2d6a4f;
-  margin: 5px 0;
-}
-
-.station-popup a:hover {
-  text-decoration: underline;
 }
