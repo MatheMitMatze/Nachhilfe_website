@@ -116,9 +116,9 @@ footer a:hover {
 /* Metro-Timeline */
 .metro-timeline {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  flex-direction: row; /* Horizontal anordnen */
+  align-items: center; /* Zentriert die Kreise */
+  gap: 20px;           /* Abstand zwischen den Kreisen */
   margin: 40px 0;
 }
 
@@ -197,7 +197,7 @@ footer a:hover {
 /* Medienabfragen für responsive Design */
 @media (max-width: 768px) {
   .metro-timeline {
-    flex-direction: column;
+    flex-direction: column; /* Auf kleinen Bildschirmen vertikal anordnen */
     align-items: center;
     gap: 20px;
   }
@@ -207,5 +207,3 @@ footer a:hover {
     height: 60px;
   }
 }
-
-``
