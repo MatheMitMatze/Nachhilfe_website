@@ -22,6 +22,18 @@ header h1 {
   color: #2d6a4f;
 }
 
+/* Zentrale Schlagwörter */
+.schlagworte {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+.schlagworte p {
+  font-size: 3rem;
+  color: #2d6a4f;
+  font-weight: 400;
+}
+
 /* Abschnitt für die Gleichung */
 .gleichung {
   background-color: #ffffff;
@@ -57,26 +69,6 @@ header h1 {
   display: inline-block;
 }
 
-/* Footer */
-footer {
-  background-color: #2d6a4f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
 /* Kachel-Layout */
 .options {
   margin-top: 50px;
@@ -104,6 +96,26 @@ footer a:hover {
   transform: scale(1.05);
 }
 
+/* Footer */
+footer {
+  background-color: #2d6a4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* Medienabfragen für responsive Design */
 @media (max-width: 768px) {
   .options {
@@ -119,23 +131,8 @@ footer a:hover {
     width: 120px;
     height: 120px;
   }
-}
-.schlagworte {
-  text-align: center;
-  margin: 40px 0 20px;
-  font-size: 1.5rem;
-  color: #2d6a4f;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
 
-.schlagworte span {
-  display: inline-block;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
-}
-
-.schlagworte span:hover {
-  transform: scale(1.1);
-  color: #1b4332;
+  .schlagworte p {
+    font-size: 2rem;
+  }
 }
