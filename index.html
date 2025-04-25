@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>Mathe mit Matze</title>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
 </head>
 <body>
 
@@ -13,21 +16,47 @@
   </header>
 
   <main>
-    <div class="options">
-      <a class="option" href="nachhilfe.html">📚 Nachhilfe</a>
-      <a class="option" href="blog.html">✍️ Blog</a>
+    <div class="content">
+      <!-- Einstein-Gleichung Abschnitt -->
+      <section class="gleichung">
+        <h2>Einsteins Feldgleichung der Allgemeinen Relativitätstheorie</h2>
+        <p>Die allgemeine Form der Gleichung lautet:</p>
+        <div class="math">
+          <p>
+            <span id="einstein-equation">
+              $$G_{\mu \nu} + \Lambda g_{\mu \nu} = \frac{8 \pi G}{c^4} T_{\mu \nu}$$
+            </span>
+          </p>
+        </div>
+        <p>Hierbei sind:</p>
+        <ul>
+          <li><strong>G<sub>μν</sub></strong> – der Einstein-Tensor, beschreibt die Geometrie der Raumzeit</li>
+          <li><strong>Λ</strong> – die kosmologische Konstante, die eine zusätzliche Energiekomponente beschreibt</li>
+          <li><strong>g<sub>μν</sub></strong> – die Metrik-Tensor, die die Struktur der Raumzeit beschreibt</li>
+          <li><strong>G</strong> – die Gravitationskonstante</li>
+          <li><strong>c</strong> – die Lichtgeschwindigkeit</li>
+          <li><strong>T<sub>μν</sub></strong> – der Energie-Impuls-Tensor, der die Verteilung von Energie und Impuls beschreibt</li>
+        </ul>
+        <p>Die Raum-Zeit-Mannigfaltigkeit (M) wird durch diese Gleichung definiert und beschreibt, wie Massen und Energien die Raumzeit krümmen.</p>
+      </section>
 
-  <footer>
-   <div class="footer-content">
-    <p><a href="ubermich.html">M.Sc. Mathematics · Matthias Bärlin</a></p>
-    <p>✉️ <a href="mailto:mathemitmatze@gmx.de">mathemitmatze@gmx.de</a></p>
-    <p>📞 <a href="tel:+4915560458977">0155 60458977</a></p>
-    <p>📍 Althengstett</p>
-   </div>
-  </footer>
+      <!-- Weiterer Inhalt -->
+      <div class="options">
+        <a class="option" href="nachhilfe.html">📚 Nachhilfe</a>
+        <a class="option" href="blog.html">✍️ Blog</a>
+      </div>
 
     </div>
   </main>
+
+  <footer>
+    <div class="footer-content">
+      <p><a href="ubermich.html">M.Sc. Mathematics · Matthias Bärlin</a></p>
+      <p>✉️ <a href="mailto:mathemitmatze@gmx.de">mathemitmatze@gmx.de</a></p>
+      <p>📞 <a href="tel:+4915560458977">0155 60458977</a></p>
+      <p>📍 Althengstett</p>
+    </div>
+  </footer>
 
 </body>
 </html>
