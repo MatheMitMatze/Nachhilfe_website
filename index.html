@@ -3,37 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Mathe mit Matze</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
+  <!-- MathJax (neue Version) -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 <body>
 
   <header>
-    <h1>Willkommen bei <span class="highlight">Mathe mit Matze</span> </h1>
+    <h1>Willkommen bei <span class="highlight">Mathe mit Matze</span></h1>
     <p>Hier findest du Hilfe beim Lernen und spannende Mathe-Themen im Blog!</p>
   </header>
 
+  <!-- Zentrale Schlagwörter -->
+  <section class="schlagworte">
+    <p>
+      \(\mathcal{Kompetent}\)
+      ·
+      \(\mathcal{Verst{\ddot{a}}ndlich}\)
+      ·
+      \(\mathcal{Individuell}\)
+    </p>
+  </section>
+
   <main>
-    <section class="schlagworte">
-  <p><span>Kompetent</span> · <span>Verständlich</span> · <span>Individuell</span></p>
-</section>
-      <!-- Weiterer Inhalt -->
-      <div class="options">
-        <a class="option" href="nachhilfe.html">📚 Nachhilfe</a>
-        <a class="option" href="blog.html">✍️ Blog</a>
-      </div>
+    <div class="options">
+      <a class="option" href="nachhilfe.html">📚 Nachhilfe</a>
+      <a class="option" href="blog.html">✍️ Blog</a>
+    </div>
   </main>
 
   <footer>
     <div class="footer-content">
       <p><a href="ubermich.html">M.Sc. Mathematics · Matthias Bärlin</a></p>
       <p>✉️ <a href="mailto:mathemitmatze@gmx.de">mathemitmatze@gmx.de</a></p>
-      <p>📞 <a href="tel:+4915560458977">0155 60458977</a></p>
-      <p>📍 Althengstett</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+      <p>📞 <a href="tel
