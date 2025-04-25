@@ -22,7 +22,7 @@ header h1 {
   color: #2d6a4f;
 }
 
-/* Zentrale Schlagwörter */
+/* Schlagworte */
 .schlagworte {
   text-align: center;
   margin: 50px 0 30px;
@@ -34,7 +34,7 @@ header h1 {
   font-weight: 400;
 }
 
-/* Abschnitt für die Gleichung */
+/* Abschnitt für die Gleichung (optional, für spätere Inhalte) */
 .gleichung {
   background-color: #ffffff;
   padding: 30px 20px;
@@ -102,8 +102,6 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
