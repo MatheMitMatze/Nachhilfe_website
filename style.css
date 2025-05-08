@@ -64,6 +64,7 @@ footer {
   /* position: fixed;*/
   bottom: 0;
   width: 100%;
+  margin-top: auto; /* Fügt Abstand hinzu, wenn der Inhalt kleiner ist */
 }
 
 footer a {
