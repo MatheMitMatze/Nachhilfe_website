@@ -263,6 +263,11 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+/*Dein Footer ist momentan position: fixed; bottom: 0;, was auf kurzen Seiten wie dem Impressum überlappen oder stören kann.*/
+static-footer {
+  position: static;
+}
+
 
 /* Medienabfragen für responsive Design */
 @media (max-width: 768px) {
