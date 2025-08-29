@@ -109,8 +109,10 @@ footer a:hover {
 
 .profilbild {
   width: 150px;
-  height: 150px;
+  height: auto;
+  aspect-ratio: 1 / 1; /* optional für gleichmäßiges Seitenverhältnis */
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .zitat {
